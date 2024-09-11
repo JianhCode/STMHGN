@@ -11,19 +11,21 @@ import torch
 from torch_geometric.data import InMemoryDataset, Data
 import networkx as nx
 
-ABIDE_INFO_PATH = 'meta_data/Phenotypic_V1_0b_preprocessed.csv'
+import config
 
+ABIDE_INFO_PATH = 'meta_data/Phenotypic_V1_0b_preprocessed.csv'
+args = config.parse()
 
 def get_adj_path(dataset_name: str, Atalas_name: str, person: str, roi_num: int):
-    return f'./datasets/{dataset_name}/{Atalas_name}_WM/adj/{person}_{Atalas_name}_weight_adj_{dataset_name}_roi_{roi_num}.mat'
+    return f'{args.data_root}/{dataset_name}/{Atalas_name}_WM/adj/{person}_{Atalas_name}_weight_adj_{dataset_name}_roi_{roi_num}.mat'
 
 
 def get_ts_path(dataset_name: str, Atalas_name: str, person: str, roi_num: int):
-    return f'./datasets/{dataset_name}/{Atalas_name}_WM/time_series/{person}_{Atalas_name}_Ts_{dataset_name}_{roi_num}.mat'
+    return f'{args.data_root}/{dataset_name}/{Atalas_name}_WM/time_series/{person}_{Atalas_name}_Ts_{dataset_name}_{roi_num}.mat'
 
 
 def get_H_path(dataset_name: str, Atalas_name: str, person: str, H_type: str, roi_num: int):
-    return f'./datasets/{dataset_name}/{Atalas_name}_WM/{H_type}/{Atalas_name}_{H_type}_{roi_num}_{person}.mat'
+    return f'{args.data_root}/{dataset_name}/{Atalas_name}_WM/{H_type}/{Atalas_name}_{H_type}_{roi_num}_{person}.mat'
 
 
 def threshold_adj_array(adj_array: np.ndarray, threshold: int, num_nodes: int, add_self_link=True) -> np.ndarray:
