@@ -30,7 +30,7 @@ The repository is primarily composed of the following sections:
 ## Data availability
 [ABIDE-I dataset](http://preprocessed-connectomes-project.org/abide/) is a publicly available dataset.
 
-The WCH SZ dataset cannot be publicly shared, which collected from the West China Hospital of Sichuan University.
+The WCH SZ dataset cannot be publicly shared, which was collected from the West China Hospital of Sichuan University.
 
 ## Acknowledgements
 
