@@ -19,7 +19,7 @@ The repository is primarily composed of the following sections:
  * `STMHGN.py`: The core code of the proposed STMHGN model is primarily based on the `TCN` and `HGNN` modules.
  * `model_train.py`: The code for training and testing the model can be executed through the following example:
 ```pthon
-    python model.train.py --dataset_name ABIDE --data_root /path/datasets_mem/ --save_path /path/saved_model/
+    python model.train.py --dataset_name ABIDE --data_root /path/datasets/ --save_path /path/saved_model/
     # For detailed parameters, please refer to config.py.
 ```
  * `TCN.py`: Temporal Convolutional Network, available from: https://github.com/locuslab/TCN/blob/master/TCN/tcn.py
