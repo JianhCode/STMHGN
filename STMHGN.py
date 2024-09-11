@@ -69,7 +69,7 @@ class STMHGNet(nn.Module):
         self.convs.append(HGNN_conv(self.input_dim, hidden_dim1))
         self.convs.append(HGNN_conv(hidden_dim1, hidden_dim2))
 
-        for _ in range(self.num_layers):
+        for _ in range(self.num_layers - 2):
             self.convs.append(HGNN_conv(self.hidden_dim2, self.hidden_dim2))
 
         # Read out layer
