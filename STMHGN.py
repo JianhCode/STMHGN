@@ -79,6 +79,7 @@ class STMHGNet(nn.Module):
             self.read_out_in = hidden_dim2 * 2 * self.num_layers
         else:
             self.read_out_in = hidden_dim2 * self.num_layers
+            
         self.read_out = nn.Sequential(
             nn.Linear(self.read_out_in, hidden_dim2), nn.ReLU(),
             nn.Dropout(self.dropout),
