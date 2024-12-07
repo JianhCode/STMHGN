@@ -1,7 +1,7 @@
-# STMHGN
+# STMHGN:A Spatial-Temporal Muti-Hypergraph Network for Psychiatric Diseases Diagnosis and Biomarkers Identification
 ![My Image](./meta_data/Model.png)
 ## Overview
-STMHGN: A Spatial-Temporal Muti-Hypergraph Network for Psychiatric Diseases Diagnosis and Biomarkers Identification.
+The STMHGN framework comprises a TCN block, a wMHGF module, multi-hypergraph convolutional (MHGC) layers, and a block for hypergraph classification and interpretation.
 
 
 ## Python dependencies
