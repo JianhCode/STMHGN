@@ -1,5 +1,5 @@
 # STMHGN
-
+![My Image](./meta_data/Model.png)
 ## Overview
 STMHGN: A Spatial-Temporal Muti-Hypergraph Network for Psychiatric Diseases Diagnosis and Biomarkers Identification.
 
